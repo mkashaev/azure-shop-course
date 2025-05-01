@@ -2,7 +2,7 @@
   "root": true,
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "project": "./tsconfig.json"
+    "project": ["./tsconfig.json", "./fa-products-service/tsconfig.json"]
   },
   "extends": [
     "plugin:@typescript-eslint/recommended",
@@ -12,6 +12,12 @@
     "prettier"
   ],
   "plugins": ["@typescript-eslint", "react", "prettier"],
+  "prettier/prettier": [
+    "error",
+    {
+      "endOfLine": "auto"
+    }
+  ],
   "env": {
     "browser": true,
     "node": true
